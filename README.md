@@ -49,9 +49,8 @@ The goal is to create a portfolio that feels **personal, intentional, and profes
 ### 🌐 View the Portfolio
 
 **Live Website:**
-`https://your-domain.com`
+`portfoliogsj.vercel.app`
 
-> Replace the URL above with your deployed portfolio URL.
 
 ### 💻 Repository
 
