@@ -6,7 +6,7 @@
 <title>G S Janmesh — Portfolio</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500;1,9..144,600&family=Manrope:wght@400;500;600;700;800&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500;1,9..144,600&family=Manrope:wght@400;500;600;700;800&family=Caveat:wght@600;700&family=Bricolage+Grotesque:opsz,wght@12..96,400;500;600;700;800&display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
   tailwind.config = {
@@ -26,7 +26,8 @@
           clay:    '#B5643C',
         },
         fontFamily: {
-          display: ['Fraunces', 'serif'],
+          display: ['"Bricolage Grotesque"', 'sans-serif'],
+          brand: ['Fraunces', 'serif'],
           sans: ['Manrope', 'sans-serif'],
           hand: ['Caveat', 'cursive'],
         },
@@ -40,6 +41,7 @@
   ::selection{ background:#3E9C6D; color:#F7F3E8; }
   :focus-visible{ outline:2px solid #2F6B4F; outline-offset:3px; }
 
+  
   .paper{
     background-color:#F8F2E6;
     background-image:
@@ -95,8 +97,9 @@
   </div>
 </div>
 
+
 <nav class="fixed top-5 left-1/2 -translate-x-1/2 z-50 flex items-center gap-1 p-2 bg-cream/80 border border-olive/25 rounded-full backdrop-blur-md shadow-[0_8px_30px_rgba(36,36,24,0.10)] max-w-[calc(100%-2rem)]">
-  <a href="#top" class="font-display italic font-semibold text-base px-4 whitespace-nowrap text-ink">GS <span class="text-forest">Janmesh</span></a>
+  <a href="#top" class="font-brand italic font-semibold text-base pl-3 pr-5 whitespace-nowrap text-ink">GS <span class="text-forest">Janmesh</span></a>
   <div class="hidden md:flex gap-0.5">
     <a href="#about" class="text-sm font-semibold text-stone px-4 py-2.5 rounded-full whitespace-nowrap transition-colors hover:text-ink hover:bg-forest/10">About</a>
     <a href="#skills" class="text-sm font-semibold text-stone px-4 py-2.5 rounded-full whitespace-nowrap transition-colors hover:text-ink hover:bg-forest/10">Skills</a>
@@ -110,9 +113,10 @@
 <header id="top" class="relative z-10 overflow-hidden">
   <div class="max-w-[1180px] mx-auto px-8 pt-28 md:pt-24 grid md:grid-cols-[1.05fr_0.95fr] gap-4 items-end md:min-h-[100svh]">
 
+   
     <div class="self-center pb-4 md:pb-24">
       <p class="text-lg md:text-xl font-medium text-stone mb-2">Hello, I'm</p>
-      <h1 class="font-sans font-extrabold text-6xl sm:text-7xl lg:text-[5.6rem] leading-[1.02] tracking-tight text-ink">
+      <h1 class="font-display font-extrabold text-6xl sm:text-7xl lg:text-[5.6rem] leading-[1.02] tracking-tight text-ink">
         GS <span class="text-forest">Janmesh</span>
       </h1>
       <div class="mt-4 flex flex-wrap items-center gap-x-3 gap-y-1 text-base md:text-lg font-bold text-ink">
@@ -120,7 +124,7 @@
         <span>UI/UX Enthusiast</span><span class="text-olive">·</span>
         <span>Web Developer</span>
       </div>
-      <p class="max-w-md text-stone mt-5 text-base md:text-[1.05rem]">
+      <p class="max-w-lg text-stone mt-5 text-base md:text-lg">
         I'm a computer science student who builds software with security and usability in
         mind — from encryption tools to AI-assisted apps, with a growing interest in
         cybersecurity, AI, and thoughtful interface design.
@@ -147,6 +151,7 @@
       </div>
     </div>
 
+   
     <div class="relative h-[470px] sm:h-[560px] md:h-[min(730px,calc(100svh-6rem))]">
       <svg viewBox="0 0 500 500" class="absolute left-1/2 top-[6%] w-[92%] -translate-x-1/2" aria-hidden="true">
         <path d="M438 126c40 54 46 132 14 194-32 63-100 104-172 120-74 17-152 0-196-56-44-55-46-134-12-196 34-61 98-92 160-110 64-18 166-6 206 48z" fill="#D5E4C6"/>
@@ -172,6 +177,7 @@
   <div class="h-px bg-gradient-to-r from-transparent via-olive/30 to-transparent"></div>
 </div>
 
+
 <section id="about" class="relative z-10 py-28">
   <div class="max-w-[1180px] mx-auto px-8">
     <div class="grid md:grid-cols-[0.75fr_1.25fr] gap-10 md:gap-16 items-start">
@@ -189,7 +195,7 @@
 
       <div>
         <div class="max-w-xl mb-7">
-          <h2 class="font-display italic font-semibold text-4xl md:text-5xl text-ink">About</h2>
+          <h2 class="font-display font-bold text-4xl md:text-5xl text-ink">About</h2>
         </div>
         <p class="text-stone text-base md:text-lg mb-5 max-w-[62ch]">
           I'm currently pursuing <strong class="text-ink font-bold">B.E. in Computer Science &amp; Engineering</strong>,
@@ -212,8 +218,8 @@
           <span class="px-4 py-2 border border-olive/25 rounded-full text-sm bg-white/60 text-ink">UI/UX Design</span>
         </div>
         <div class="mt-8 rounded-2xl border border-olive/25 border-l-[3px] border-l-forest p-7 bg-white/60">
-          <div class="font-display italic text-forest text-lg mb-2">Career goal</div>
-          <p class="text-stone text-base">
+          <div class="font-display text-forest text-lg mb-2">Career goal</div>
+          <p class="text-stone text-base md:text-lg">
             To build a strong technology career and create secure, meaningful,
             impactful products — software that people can rely on and enjoy using.
           </p>
@@ -228,42 +234,43 @@
   <div class="h-px bg-gradient-to-r from-transparent via-olive/30 to-transparent"></div>
 </div>
 
+
 <section id="skills" class="relative z-10 py-28">
   <div class="max-w-[1180px] mx-auto px-8">
     <div class="max-w-xl mb-14">
-      <h2 class="font-display italic font-semibold text-4xl md:text-5xl text-ink">Skills</h2>
+      <h2 class="font-display font-bold text-4xl md:text-5xl text-ink">Skills</h2>
       <p class="text-stone mt-3.5 text-base md:text-lg">Languages, tools, and disciplines I work with regularly.</p>
     </div>
     <div class="grid md:grid-cols-3 gap-5">
 
       <div class="rounded-2xl border border-olive/25 bg-white/60 p-8">
-        <h3 class="font-display italic font-medium text-forest text-xl mb-5">Programming &amp; Web</h3>
+        <h3 class="font-display font-semibold text-forest text-xl md:text-2xl mb-5">Programming &amp; Web</h3>
         <ul class="space-y-0 divide-y divide-olive/15">
-          <li class="py-2.5 text-stone text-[0.96rem] flex items-center justify-between">HTML<span class="h-1.5 w-1.5 rounded-full bg-leaf"></span></li>
-          <li class="py-2.5 text-stone text-[0.96rem] flex items-center justify-between">CSS<span class="h-1.5 w-1.5 rounded-full bg-leaf"></span></li>
-          <li class="py-2.5 text-stone text-[0.96rem] flex items-center justify-between">JavaScript<span class="h-1.5 w-1.5 rounded-full bg-leaf"></span></li>
-          <li class="py-2.5 text-stone text-[0.96rem] flex items-center justify-between">Python<span class="h-1.5 w-1.5 rounded-full bg-leaf"></span></li>
-          <li class="py-2.5 text-stone text-[0.96rem] flex items-center justify-between">C<span class="h-1.5 w-1.5 rounded-full bg-leaf"></span></li>
-          <li class="py-2.5 text-stone text-[0.96rem] flex items-center justify-between">Java<span class="h-1.5 w-1.5 rounded-full bg-leaf"></span></li>
-          <li class="py-2.5 text-stone text-[0.96rem] flex items-center justify-between">Tailwind CSS<span class="h-1.5 w-1.5 rounded-full bg-leaf"></span></li>
+          <li class="py-2.5 text-stone text-base md:text-lg flex items-center justify-between">HTML<span class="h-1.5 w-1.5 rounded-full bg-leaf"></span></li>
+          <li class="py-2.5 text-stone text-base md:text-lg flex items-center justify-between">CSS<span class="h-1.5 w-1.5 rounded-full bg-leaf"></span></li>
+          <li class="py-2.5 text-stone text-base md:text-lg flex items-center justify-between">JavaScript<span class="h-1.5 w-1.5 rounded-full bg-leaf"></span></li>
+          <li class="py-2.5 text-stone text-base md:text-lg flex items-center justify-between">Python<span class="h-1.5 w-1.5 rounded-full bg-leaf"></span></li>
+          <li class="py-2.5 text-stone text-base md:text-lg flex items-center justify-between">C<span class="h-1.5 w-1.5 rounded-full bg-leaf"></span></li>
+          <li class="py-2.5 text-stone text-base md:text-lg flex items-center justify-between">Java<span class="h-1.5 w-1.5 rounded-full bg-leaf"></span></li>
+          <li class="py-2.5 text-stone text-base md:text-lg flex items-center justify-between">Tailwind CSS<span class="h-1.5 w-1.5 rounded-full bg-leaf"></span></li>
         </ul>
       </div>
 
       <div class="rounded-2xl border border-olive/25 bg-white/60 p-8">
-        <h3 class="font-display italic font-medium text-forest text-xl mb-5">Database &amp; Tools</h3>
+        <h3 class="font-display font-semibold text-forest text-xl md:text-2xl mb-5">Database &amp; Tools</h3>
         <ul class="space-y-0 divide-y divide-olive/15">
-          <li class="py-2.5 text-stone text-[0.96rem] flex items-center justify-between">MySQL<span class="h-1.5 w-1.5 rounded-full bg-leaf"></span></li>
-          <li class="py-2.5 text-stone text-[0.96rem] flex items-center justify-between">Git<span class="h-1.5 w-1.5 rounded-full bg-leaf"></span></li>
-          <li class="py-2.5 text-stone text-[0.96rem] flex items-center justify-between">GitHub<span class="h-1.5 w-1.5 rounded-full bg-leaf"></span></li>
-          <li class="py-2.5 text-stone text-[0.96rem] flex items-center justify-between">Figma<span class="h-1.5 w-1.5 rounded-full bg-leaf"></span></li>
+          <li class="py-2.5 text-stone text-base md:text-lg flex items-center justify-between">MySQL<span class="h-1.5 w-1.5 rounded-full bg-leaf"></span></li>
+          <li class="py-2.5 text-stone text-base md:text-lg flex items-center justify-between">Git<span class="h-1.5 w-1.5 rounded-full bg-leaf"></span></li>
+          <li class="py-2.5 text-stone text-base md:text-lg flex items-center justify-between">GitHub<span class="h-1.5 w-1.5 rounded-full bg-leaf"></span></li>
+          <li class="py-2.5 text-stone text-base md:text-lg flex items-center justify-between">Figma<span class="h-1.5 w-1.5 rounded-full bg-leaf"></span></li>
         </ul>
       </div>
 
       <div class="rounded-2xl border border-olive/25 bg-white/60 p-8">
-        <h3 class="font-display italic font-medium text-forest text-xl mb-5">Other</h3>
+        <h3 class="font-display font-semibold text-forest text-xl md:text-2xl mb-5">Other</h3>
         <ul class="space-y-0 divide-y divide-olive/15">
-          <li class="py-2.5 text-stone text-[0.96rem] flex items-center justify-between">UI/UX Design<span class="h-1.5 w-1.5 rounded-full bg-leaf"></span></li>
-          <li class="py-2.5 text-stone text-[0.96rem] flex items-center justify-between">Cybersecurity<span class="h-1.5 w-1.5 rounded-full bg-leaf"></span></li>
+          <li class="py-2.5 text-stone text-base md:text-lg flex items-center justify-between">UI/UX Design<span class="h-1.5 w-1.5 rounded-full bg-leaf"></span></li>
+          <li class="py-2.5 text-stone text-base md:text-lg flex items-center justify-between">Cybersecurity<span class="h-1.5 w-1.5 rounded-full bg-leaf"></span></li>
         </ul>
       </div>
 
@@ -275,71 +282,71 @@
 <section id="projects" class="relative z-10 py-28">
   <div class="max-w-[1180px] mx-auto px-8">
     <div class="max-w-xl mb-14">
-      <h2 class="font-display italic font-semibold text-4xl md:text-5xl text-ink">Projects</h2>
+      <h2 class="font-display font-bold text-4xl md:text-5xl text-ink">Projects</h2>
       <p class="text-stone mt-3.5 text-base md:text-lg">A mix of security tools, AI-powered apps, and full-stack builds.</p>
     </div>
     <div class="grid md:grid-cols-2 gap-6">
 
       <div class="rounded-2xl border border-olive/25 p-8 bg-white/60 transition-all hover:border-forest/40 hover:-translate-y-1 hover:shadow-lg hover:shadow-olive/10">
-        <span class="num-outline font-display italic text-4xl block mb-4">01</span>
-        <h3 class="text-xl font-extrabold text-ink mb-3">Interactive Cybersecurity Awareness</h3>
+        <span class="num-outline font-display text-4xl block mb-4">01</span>
+        <h3 class="font-display text-xl md:text-2xl font-bold text-ink mb-3">Interactive Cybersecurity Awareness</h3>
         <ul class="my-4 space-y-1.5">
-          <li class="text-stone text-sm relative pl-4 before:content-[''] before:absolute before:left-0 before:top-[0.6rem] before:w-2 before:h-px before:bg-forest">Password strength checking</li>
-          <li class="text-stone text-sm relative pl-4 before:content-[''] before:absolute before:left-0 before:top-[0.6rem] before:w-2 before:h-px before:bg-forest">Phishing awareness modules</li>
-          <li class="text-stone text-sm relative pl-4 before:content-[''] before:absolute before:left-0 before:top-[0.6rem] before:w-2 before:h-px before:bg-forest">Security tips &amp; best practices</li>
-          <li class="text-stone text-sm relative pl-4 before:content-[''] before:absolute before:left-0 before:top-[0.6rem] before:w-2 before:h-px before:bg-forest">Interactive quizzes</li>
-          <li class="text-stone text-sm relative pl-4 before:content-[''] before:absolute before:left-0 before:top-[0.6rem] before:w-2 before:h-px before:bg-forest">User authentication</li>
+          <li class="text-stone text-base md:text-lg relative pl-5 before:content-[''] before:absolute before:left-0 before:top-[0.85rem] before:w-2.5 before:h-px before:bg-forest">Password strength checking</li>
+          <li class="text-stone text-base md:text-lg relative pl-5 before:content-[''] before:absolute before:left-0 before:top-[0.85rem] before:w-2.5 before:h-px before:bg-forest">Phishing awareness modules</li>
+          <li class="text-stone text-base md:text-lg relative pl-5 before:content-[''] before:absolute before:left-0 before:top-[0.85rem] before:w-2.5 before:h-px before:bg-forest">Security tips &amp; best practices</li>
+          <li class="text-stone text-base md:text-lg relative pl-5 before:content-[''] before:absolute before:left-0 before:top-[0.85rem] before:w-2.5 before:h-px before:bg-forest">Interactive quizzes</li>
+          <li class="text-stone text-base md:text-lg relative pl-5 before:content-[''] before:absolute before:left-0 before:top-[0.85rem] before:w-2.5 before:h-px before:bg-forest">User authentication</li>
         </ul>
         <div class="flex flex-wrap gap-2 mt-4">
-          <span class="text-xs font-bold text-olived bg-olive/10 border border-olive/25 px-3 py-1.5 rounded-full">HTML</span>
-          <span class="text-xs font-bold text-olived bg-olive/10 border border-olive/25 px-3 py-1.5 rounded-full">CSS</span>
-          <span class="text-xs font-bold text-olived bg-olive/10 border border-olive/25 px-3 py-1.5 rounded-full">JavaScript</span>
-          <span class="text-xs font-bold text-olived bg-olive/10 border border-olive/25 px-3 py-1.5 rounded-full">PHP</span>
-          <span class="text-xs font-bold text-olived bg-olive/10 border border-olive/25 px-3 py-1.5 rounded-full">MySQL</span>
+          <span class="text-sm font-bold text-olived bg-olive/10 border border-olive/25 px-3 py-1.5 rounded-full">HTML</span>
+          <span class="text-sm font-bold text-olived bg-olive/10 border border-olive/25 px-3 py-1.5 rounded-full">CSS</span>
+          <span class="text-sm font-bold text-olived bg-olive/10 border border-olive/25 px-3 py-1.5 rounded-full">JavaScript</span>
+          <span class="text-sm font-bold text-olived bg-olive/10 border border-olive/25 px-3 py-1.5 rounded-full">PHP</span>
+          <span class="text-sm font-bold text-olived bg-olive/10 border border-olive/25 px-3 py-1.5 rounded-full">MySQL</span>
         </div>
       </div>
 
       <div class="rounded-2xl border border-olive/25 p-8 bg-white/60 transition-all hover:border-forest/40 hover:-translate-y-1 hover:shadow-lg hover:shadow-olive/10">
-        <span class="num-outline font-display italic text-4xl block mb-4">02</span>
-        <h3 class="text-xl font-extrabold text-ink mb-3">CyberGuard</h3>
+        <span class="num-outline font-display text-4xl block mb-4">02</span>
+        <h3 class="font-display text-xl md:text-2xl font-bold text-ink mb-3">CyberGuard</h3>
         <ul class="my-4 space-y-1.5">
-          <li class="text-stone text-sm relative pl-4 before:content-[''] before:absolute before:left-0 before:top-[0.6rem] before:w-2 before:h-px before:bg-forest">AI-powered cybersecurity chatbot</li>
-          <li class="text-stone text-sm relative pl-4 before:content-[''] before:absolute before:left-0 before:top-[0.6rem] before:w-2 before:h-px before:bg-forest">Provides real-time security guidance through conversation</li>
+          <li class="text-stone text-base md:text-lg relative pl-5 before:content-[''] before:absolute before:left-0 before:top-[0.85rem] before:w-2.5 before:h-px before:bg-forest">AI-powered cybersecurity chatbot</li>
+          <li class="text-stone text-base md:text-lg relative pl-5 before:content-[''] before:absolute before:left-0 before:top-[0.85rem] before:w-2.5 before:h-px before:bg-forest">Provides real-time security guidance through conversation</li>
         </ul>
         <div class="flex flex-wrap gap-2 mt-4">
-          <span class="text-xs font-bold text-olived bg-olive/10 border border-olive/25 px-3 py-1.5 rounded-full">AI</span>
-          <span class="text-xs font-bold text-olived bg-olive/10 border border-olive/25 px-3 py-1.5 rounded-full">Python</span>
-          <span class="text-xs font-bold text-olived bg-olive/10 border border-olive/25 px-3 py-1.5 rounded-full">Cybersecurity</span>
+          <span class="text-sm font-bold text-olived bg-olive/10 border border-olive/25 px-3 py-1.5 rounded-full">AI</span>
+          <span class="text-sm font-bold text-olived bg-olive/10 border border-olive/25 px-3 py-1.5 rounded-full">Python</span>
+          <span class="text-sm font-bold text-olived bg-olive/10 border border-olive/25 px-3 py-1.5 rounded-full">Cybersecurity</span>
         </div>
       </div>
 
       <div class="rounded-2xl border border-olive/25 p-8 bg-white/60 transition-all hover:border-forest/40 hover:-translate-y-1 hover:shadow-lg hover:shadow-olive/10">
-        <span class="num-outline font-display italic text-4xl block mb-4">03</span>
-        <h3 class="text-xl font-extrabold text-ink mb-3">FlowPilot</h3>
+        <span class="num-outline font-display text-4xl block mb-4">03</span>
+        <h3 class="font-display text-xl md:text-2xl font-bold text-ink mb-3">FlowPilot</h3>
         <ul class="my-4 space-y-1.5">
-          <li class="text-stone text-sm relative pl-4 before:content-[''] before:absolute before:left-0 before:top-[0.6rem] before:w-2 before:h-px before:bg-forest">AI-powered task handler</li>
-          <li class="text-stone text-sm relative pl-4 before:content-[''] before:absolute before:left-0 before:top-[0.6rem] before:w-2 before:h-px before:bg-forest">Task management</li>
-          <li class="text-stone text-sm relative pl-4 before:content-[''] before:absolute before:left-0 before:top-[0.6rem] before:w-2 before:h-px before:bg-forest">Intelligent deadline reminders</li>
+          <li class="text-stone text-base md:text-lg relative pl-5 before:content-[''] before:absolute before:left-0 before:top-[0.85rem] before:w-2.5 before:h-px before:bg-forest">AI-powered task handler</li>
+          <li class="text-stone text-base md:text-lg relative pl-5 before:content-[''] before:absolute before:left-0 before:top-[0.85rem] before:w-2.5 before:h-px before:bg-forest">Task management</li>
+          <li class="text-stone text-base md:text-lg relative pl-5 before:content-[''] before:absolute before:left-0 before:top-[0.85rem] before:w-2.5 before:h-px before:bg-forest">Intelligent deadline reminders</li>
         </ul>
         <div class="flex flex-wrap gap-2 mt-4">
-          <span class="text-xs font-bold text-olived bg-olive/10 border border-olive/25 px-3 py-1.5 rounded-full">AI</span>
-          <span class="text-xs font-bold text-olived bg-olive/10 border border-olive/25 px-3 py-1.5 rounded-full">Web</span>
-          <span class="text-xs font-bold text-olived bg-olive/10 border border-olive/25 px-3 py-1.5 rounded-full">Google AI</span>
+          <span class="text-sm font-bold text-olived bg-olive/10 border border-olive/25 px-3 py-1.5 rounded-full">AI</span>
+          <span class="text-sm font-bold text-olived bg-olive/10 border border-olive/25 px-3 py-1.5 rounded-full">Web</span>
+          <span class="text-sm font-bold text-olived bg-olive/10 border border-olive/25 px-3 py-1.5 rounded-full">Google AI</span>
         </div>
       </div>
 
       <div class="rounded-2xl border border-olive/25 p-8 bg-white/60 transition-all hover:border-forest/40 hover:-translate-y-1 hover:shadow-lg hover:shadow-olive/10">
-        <span class="num-outline font-display italic text-4xl block mb-4">04</span>
-        <h3 class="text-xl font-extrabold text-ink mb-3">SecureVault</h3>
+        <span class="num-outline font-display text-4xl block mb-4">04</span>
+        <h3 class="font-display text-xl md:text-2xl font-bold text-ink mb-3">SecureVault</h3>
         <ul class="my-4 space-y-1.5">
-          <li class="text-stone text-sm relative pl-4 before:content-[''] before:absolute before:left-0 before:top-[0.6rem] before:w-2 before:h-px before:bg-forest">Secure file-encryption application</li>
-          <li class="text-stone text-sm relative pl-4 before:content-[''] before:absolute before:left-0 before:top-[0.6rem] before:w-2 before:h-px before:bg-forest">AES-256 encryption</li>
-          <li class="text-stone text-sm relative pl-4 before:content-[''] before:absolute before:left-0 before:top-[0.6rem] before:w-2 before:h-px before:bg-forest">Password-based protection</li>
+          <li class="text-stone text-base md:text-lg relative pl-5 before:content-[''] before:absolute before:left-0 before:top-[0.85rem] before:w-2.5 before:h-px before:bg-forest">Secure file-encryption application</li>
+          <li class="text-stone text-base md:text-lg relative pl-5 before:content-[''] before:absolute before:left-0 before:top-[0.85rem] before:w-2.5 before:h-px before:bg-forest">AES-256 encryption</li>
+          <li class="text-stone text-base md:text-lg relative pl-5 before:content-[''] before:absolute before:left-0 before:top-[0.85rem] before:w-2.5 before:h-px before:bg-forest">Password-based protection</li>
         </ul>
         <div class="flex flex-wrap gap-2 mt-4">
-          <span class="text-xs font-bold text-olived bg-olive/10 border border-olive/25 px-3 py-1.5 rounded-full">Python</span>
-          <span class="text-xs font-bold text-olived bg-olive/10 border border-olive/25 px-3 py-1.5 rounded-full">AES-256</span>
-          <span class="text-xs font-bold text-olived bg-olive/10 border border-olive/25 px-3 py-1.5 rounded-full">PyCryptodome</span>
+          <span class="text-sm font-bold text-olived bg-olive/10 border border-olive/25 px-3 py-1.5 rounded-full">Python</span>
+          <span class="text-sm font-bold text-olived bg-olive/10 border border-olive/25 px-3 py-1.5 rounded-full">AES-256</span>
+          <span class="text-sm font-bold text-olived bg-olive/10 border border-olive/25 px-3 py-1.5 rounded-full">PyCryptodome</span>
         </div>
       </div>
 
@@ -351,14 +358,15 @@
   <div class="h-px bg-gradient-to-r from-transparent via-olive/30 to-transparent"></div>
 </div>
 
+
 <section id="beyond" class="relative z-10 py-28">
   <div class="max-w-[1180px] mx-auto px-8">
     <div class="max-w-xl mb-14">
-      <h2 class="font-display italic font-semibold text-4xl md:text-5xl text-ink">Beyond Code</h2>
+      <h2 class="font-display font-bold text-4xl md:text-5xl text-ink">Beyond Code</h2>
       <p class="text-stone mt-3.5 text-base md:text-lg">Six strings and seventeen puzzles — the things that keep my hands busy away from a keyboard.</p>
     </div>
 
-    
+  
     <div class="grid md:grid-cols-[0.9fr_1.1fr] gap-8 md:gap-12 items-center mb-16">
       <div class="relative">
         <div class="absolute -inset-3 rounded-[2rem] bg-gradient-to-br from-forest/20 to-olive/15 -z-10"></div>
@@ -371,7 +379,7 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="h-3.5 w-3.5"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
           Guitarist
         </div>
-        <h3 class="font-display italic font-semibold text-3xl text-ink mb-4">Playing by ear, performing on stage</h3>
+        <h3 class="font-display font-bold text-3xl text-ink mb-4">Playing by ear, performing on stage</h3>
         <p class="text-stone text-base md:text-lg mb-5 max-w-[56ch]">
           Guitar is where I go when I need to think in a different language. I've
           performed as a guitarist at college cultural events, and playing regularly
@@ -394,8 +402,8 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="h-3.5 w-3.5"><path d="M12 2 3 7v10l9 5 9-5V7l-9-5Z"/><path d="M3 7l9 5 9-5"/><path d="M12 12v10"/></svg>
             Speedcuber
           </div>
-          <h3 class="font-display italic font-semibold text-3xl text-ink">17 puzzles, solved</h3>
-          <p class="text-stone mt-3 max-w-[56ch]">
+          <h3 class="font-display font-bold text-3xl text-ink">17 puzzles, solved</h3>
+          <p class="text-stone text-base md:text-lg mt-3 max-w-[56ch]">
             From the standard 3×3 to shape-shifters like the Mastermorphix and Square-2 —
             each one is a different algorithm to internalise, which is probably why I
             enjoy them as much as I do debugging.
@@ -404,138 +412,137 @@
         <div class="flex flex-wrap gap-3">
           <div class="rounded-2xl border border-clay/30 bg-clay/10 px-5 py-4 min-w-[150px]">
             <div class="text-2xl">🏅</div>
-            <div class="font-bold text-ink mt-1.5 text-[0.98rem]">Medal</div>
-            <div class="text-xs text-stone mt-0.5">State-level cube competition</div>
+            <div class="font-display font-bold text-ink mt-1.5 text-lg">Medal</div>
+            <div class="text-sm text-stone mt-0.5">State-level cube competition</div>
           </div>
           <div class="rounded-2xl border border-forest/30 bg-forest/10 px-5 py-4 min-w-[150px]">
             <div class="text-2xl">🏆</div>
-            <div class="font-bold text-ink mt-1.5 text-[0.98rem]">Cup</div>
-            <div class="text-xs text-stone mt-0.5">State-level cube competition</div>
+            <div class="font-display font-bold text-ink mt-1.5 text-lg">Cup</div>
+            <div class="text-sm text-stone mt-0.5">State-level cube competition</div>
           </div>
         </div>
       </div>
 
-     
       <div class="relative">
         <div id="cubeTrack" class="flex gap-4 overflow-x-auto snap-x snap-mandatory no-scrollbar scroll-smooth pb-2">
         <div class="shrink-0 w-[170px] snap-start rounded-2xl border border-olive/25 bg-white/60 p-5 text-center transition-all hover:border-forest/50 hover:-translate-y-1 hover:shadow-lg hover:shadow-olive/10">
           <div class="mx-auto mb-3 grid h-12 w-12 place-items-center rounded-xl bg-forest/10 text-forest">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" class="h-6 w-6"><path d="M12 2 3 7v10l9 5 9-5V7l-9-5Z"/><path d="M3 7l9 5 9-5"/><path d="M12 12v10"/></svg>
           </div>
-          <div class="font-bold text-ink text-[0.98rem]">2×2</div>
-          <div class="text-xs text-stone mt-1">Pocket Cube</div>
+          <div class="font-display font-bold text-ink text-lg">2×2</div>
+          <div class="text-sm text-stone mt-1">Pocket Cube</div>
         </div>
         <div class="shrink-0 w-[170px] snap-start rounded-2xl border border-olive/25 bg-white/60 p-5 text-center transition-all hover:border-forest/50 hover:-translate-y-1 hover:shadow-lg hover:shadow-olive/10">
           <div class="mx-auto mb-3 grid h-12 w-12 place-items-center rounded-xl bg-forest/10 text-forest">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" class="h-6 w-6"><path d="M12 2 3 7v10l9 5 9-5V7l-9-5Z"/><path d="M3 7l9 5 9-5"/><path d="M12 12v10"/></svg>
           </div>
-          <div class="font-bold text-ink text-[0.98rem]">3×3</div>
-          <div class="text-xs text-stone mt-1">Rubik's Cube</div>
+          <div class="font-display font-bold text-ink text-lg">3×3</div>
+          <div class="text-sm text-stone mt-1">Rubik's Cube</div>
         </div>
         <div class="shrink-0 w-[170px] snap-start rounded-2xl border border-olive/25 bg-white/60 p-5 text-center transition-all hover:border-forest/50 hover:-translate-y-1 hover:shadow-lg hover:shadow-olive/10">
           <div class="mx-auto mb-3 grid h-12 w-12 place-items-center rounded-xl bg-forest/10 text-forest">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" class="h-6 w-6"><path d="M12 2 3 7v10l9 5 9-5V7l-9-5Z"/><path d="M3 7l9 5 9-5"/><path d="M12 12v10"/></svg>
           </div>
-          <div class="font-bold text-ink text-[0.98rem]">4×4</div>
-          <div class="text-xs text-stone mt-1">Rubik's Revenge</div>
+          <div class="font-display font-bold text-ink text-lg">4×4</div>
+          <div class="text-sm text-stone mt-1">Rubik's Revenge</div>
         </div>
         <div class="shrink-0 w-[170px] snap-start rounded-2xl border border-olive/25 bg-white/60 p-5 text-center transition-all hover:border-forest/50 hover:-translate-y-1 hover:shadow-lg hover:shadow-olive/10">
           <div class="mx-auto mb-3 grid h-12 w-12 place-items-center rounded-xl bg-forest/10 text-forest">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" class="h-6 w-6"><path d="M12 2 3 7v10l9 5 9-5V7l-9-5Z"/><path d="M3 7l9 5 9-5"/><path d="M12 12v10"/></svg>
           </div>
-          <div class="font-bold text-ink text-[0.98rem]">5×5</div>
-          <div class="text-xs text-stone mt-1">Professor's Cube</div>
+          <div class="font-display font-bold text-ink text-lg">5×5</div>
+          <div class="text-sm text-stone mt-1">Professor's Cube</div>
         </div>
         <div class="shrink-0 w-[170px] snap-start rounded-2xl border border-olive/25 bg-white/60 p-5 text-center transition-all hover:border-forest/50 hover:-translate-y-1 hover:shadow-lg hover:shadow-olive/10">
           <div class="mx-auto mb-3 grid h-12 w-12 place-items-center rounded-xl bg-forest/10 text-forest">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" class="h-6 w-6"><path d="M12 2 3 7v10l9 5 9-5V7l-9-5Z"/><path d="M3 7l9 5 9-5"/><path d="M12 12v10"/></svg>
           </div>
-          <div class="font-bold text-ink text-[0.98rem]">Dino</div>
-          <div class="text-xs text-stone mt-1">Corner-turning</div>
+          <div class="font-display font-bold text-ink text-lg">Dino</div>
+          <div class="text-sm text-stone mt-1">Corner-turning</div>
         </div>
         <div class="shrink-0 w-[170px] snap-start rounded-2xl border border-olive/25 bg-white/60 p-5 text-center transition-all hover:border-forest/50 hover:-translate-y-1 hover:shadow-lg hover:shadow-olive/10">
           <div class="mx-auto mb-3 grid h-12 w-12 place-items-center rounded-xl bg-forest/10 text-forest">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" class="h-6 w-6"><path d="M12 2 3 7v10l9 5 9-5V7l-9-5Z"/><path d="M3 7l9 5 9-5"/><path d="M12 12v10"/></svg>
           </div>
-          <div class="font-bold text-ink text-[0.98rem]">Windmill</div>
-          <div class="text-xs text-stone mt-1">Skewed 3×3</div>
+          <div class="font-display font-bold text-ink text-lg">Windmill</div>
+          <div class="text-sm text-stone mt-1">Skewed 3×3</div>
         </div>
         <div class="shrink-0 w-[170px] snap-start rounded-2xl border border-olive/25 bg-white/60 p-5 text-center transition-all hover:border-forest/50 hover:-translate-y-1 hover:shadow-lg hover:shadow-olive/10">
           <div class="mx-auto mb-3 grid h-12 w-12 place-items-center rounded-xl bg-forest/10 text-forest">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" class="h-6 w-6"><path d="M12 2 3 7v10l9 5 9-5V7l-9-5Z"/><path d="M3 7l9 5 9-5"/><path d="M12 12v10"/></svg>
           </div>
-          <div class="font-bold text-ink text-[0.98rem]">Mirror</div>
-          <div class="text-xs text-stone mt-1">Shape-shifting</div>
+          <div class="font-display font-bold text-ink text-lg">Mirror</div>
+          <div class="text-sm text-stone mt-1">Shape-shifting</div>
         </div>
         <div class="shrink-0 w-[170px] snap-start rounded-2xl border border-olive/25 bg-white/60 p-5 text-center transition-all hover:border-forest/50 hover:-translate-y-1 hover:shadow-lg hover:shadow-olive/10">
           <div class="mx-auto mb-3 grid h-12 w-12 place-items-center rounded-xl bg-forest/10 text-forest">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" class="h-6 w-6"><path d="M12 2 3 7v10l9 5 9-5V7l-9-5Z"/><path d="M3 7l9 5 9-5"/><path d="M12 12v10"/></svg>
           </div>
-          <div class="font-bold text-ink text-[0.98rem]">Barrel</div>
-          <div class="text-xs text-stone mt-1">Cylindrical</div>
+          <div class="font-display font-bold text-ink text-lg">Barrel</div>
+          <div class="text-sm text-stone mt-1">Cylindrical</div>
         </div>
         <div class="shrink-0 w-[170px] snap-start rounded-2xl border border-olive/25 bg-white/60 p-5 text-center transition-all hover:border-forest/50 hover:-translate-y-1 hover:shadow-lg hover:shadow-olive/10">
           <div class="mx-auto mb-3 grid h-12 w-12 place-items-center rounded-xl bg-forest/10 text-forest">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" class="h-6 w-6"><path d="M12 2 3 7v10l9 5 9-5V7l-9-5Z"/><path d="M3 7l9 5 9-5"/><path d="M12 12v10"/></svg>
           </div>
-          <div class="font-bold text-ink text-[0.98rem]">Twisty</div>
-          <div class="text-xs text-stone mt-1">Twist puzzle</div>
+          <div class="font-display font-bold text-ink text-lg">Twisty</div>
+          <div class="text-sm text-stone mt-1">Twist puzzle</div>
         </div>
         <div class="shrink-0 w-[170px] snap-start rounded-2xl border border-olive/25 bg-white/60 p-5 text-center transition-all hover:border-forest/50 hover:-translate-y-1 hover:shadow-lg hover:shadow-olive/10">
           <div class="mx-auto mb-3 grid h-12 w-12 place-items-center rounded-xl bg-forest/10 text-forest">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" class="h-6 w-6"><path d="M12 2 3 7v10l9 5 9-5V7l-9-5Z"/><path d="M3 7l9 5 9-5"/><path d="M12 12v10"/></svg>
           </div>
-          <div class="font-bold text-ink text-[0.98rem]">Orange</div>
-          <div class="text-xs text-stone mt-1">Fruit puzzle</div>
+          <div class="font-display font-bold text-ink text-lg">Orange</div>
+          <div class="text-sm text-stone mt-1">Fruit puzzle</div>
         </div>
         <div class="shrink-0 w-[170px] snap-start rounded-2xl border border-olive/25 bg-white/60 p-5 text-center transition-all hover:border-forest/50 hover:-translate-y-1 hover:shadow-lg hover:shadow-olive/10">
           <div class="mx-auto mb-3 grid h-12 w-12 place-items-center rounded-xl bg-forest/10 text-forest">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" class="h-6 w-6"><path d="M12 2 3 7v10l9 5 9-5V7l-9-5Z"/><path d="M3 7l9 5 9-5"/><path d="M12 12v10"/></svg>
           </div>
-          <div class="font-bold text-ink text-[0.98rem]">Apple</div>
-          <div class="text-xs text-stone mt-1">Fruit puzzle</div>
+          <div class="font-display font-bold text-ink text-lg">Apple</div>
+          <div class="text-sm text-stone mt-1">Fruit puzzle</div>
         </div>
         <div class="shrink-0 w-[170px] snap-start rounded-2xl border border-olive/25 bg-white/60 p-5 text-center transition-all hover:border-forest/50 hover:-translate-y-1 hover:shadow-lg hover:shadow-olive/10">
           <div class="mx-auto mb-3 grid h-12 w-12 place-items-center rounded-xl bg-forest/10 text-forest">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" class="h-6 w-6"><path d="M12 2 3 7v10l9 5 9-5V7l-9-5Z"/><path d="M3 7l9 5 9-5"/><path d="M12 12v10"/></svg>
           </div>
-          <div class="font-bold text-ink text-[0.98rem]">Mastermorphix</div>
-          <div class="text-xs text-stone mt-1">Tetrahedral</div>
+          <div class="font-display font-bold text-ink text-lg">Mastermorphix</div>
+          <div class="text-sm text-stone mt-1">Tetrahedral</div>
         </div>
         <div class="shrink-0 w-[170px] snap-start rounded-2xl border border-olive/25 bg-white/60 p-5 text-center transition-all hover:border-forest/50 hover:-translate-y-1 hover:shadow-lg hover:shadow-olive/10">
           <div class="mx-auto mb-3 grid h-12 w-12 place-items-center rounded-xl bg-forest/10 text-forest">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" class="h-6 w-6"><path d="M12 2 3 7v10l9 5 9-5V7l-9-5Z"/><path d="M3 7l9 5 9-5"/><path d="M12 12v10"/></svg>
           </div>
-          <div class="font-bold text-ink text-[0.98rem]">Pyraminx</div>
-          <div class="text-xs text-stone mt-1">Pyramid</div>
+          <div class="font-display font-bold text-ink text-lg">Pyraminx</div>
+          <div class="text-sm text-stone mt-1">Pyramid</div>
         </div>
         <div class="shrink-0 w-[170px] snap-start rounded-2xl border border-olive/25 bg-white/60 p-5 text-center transition-all hover:border-forest/50 hover:-translate-y-1 hover:shadow-lg hover:shadow-olive/10">
           <div class="mx-auto mb-3 grid h-12 w-12 place-items-center rounded-xl bg-forest/10 text-forest">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" class="h-6 w-6"><path d="M12 2 3 7v10l9 5 9-5V7l-9-5Z"/><path d="M3 7l9 5 9-5"/><path d="M12 12v10"/></svg>
           </div>
-          <div class="font-bold text-ink text-[0.98rem]">Megaminx</div>
-          <div class="text-xs text-stone mt-1">Dodecahedral</div>
+          <div class="font-display font-bold text-ink text-lg">Megaminx</div>
+          <div class="text-sm text-stone mt-1">Dodecahedral</div>
         </div>
         <div class="shrink-0 w-[170px] snap-start rounded-2xl border border-olive/25 bg-white/60 p-5 text-center transition-all hover:border-forest/50 hover:-translate-y-1 hover:shadow-lg hover:shadow-olive/10">
           <div class="mx-auto mb-3 grid h-12 w-12 place-items-center rounded-xl bg-forest/10 text-forest">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" class="h-6 w-6"><path d="M12 2 3 7v10l9 5 9-5V7l-9-5Z"/><path d="M3 7l9 5 9-5"/><path d="M12 12v10"/></svg>
           </div>
-          <div class="font-bold text-ink text-[0.98rem]">3×3 Axis</div>
-          <div class="text-xs text-stone mt-1">Axis cube</div>
+          <div class="font-display font-bold text-ink text-lg">3×3 Axis</div>
+          <div class="text-sm text-stone mt-1">Axis cube</div>
         </div>
         <div class="shrink-0 w-[170px] snap-start rounded-2xl border border-olive/25 bg-white/60 p-5 text-center transition-all hover:border-forest/50 hover:-translate-y-1 hover:shadow-lg hover:shadow-olive/10">
           <div class="mx-auto mb-3 grid h-12 w-12 place-items-center rounded-xl bg-forest/10 text-forest">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" class="h-6 w-6"><path d="M12 2 3 7v10l9 5 9-5V7l-9-5Z"/><path d="M3 7l9 5 9-5"/><path d="M12 12v10"/></svg>
           </div>
-          <div class="font-bold text-ink text-[0.98rem]">Square-2</div>
-          <div class="text-xs text-stone mt-1">Shape-shifting</div>
+          <div class="font-display font-bold text-ink text-lg">Square-2</div>
+          <div class="text-sm text-stone mt-1">Shape-shifting</div>
         </div>
         <div class="shrink-0 w-[170px] snap-start rounded-2xl border border-olive/25 bg-white/60 p-5 text-center transition-all hover:border-forest/50 hover:-translate-y-1 hover:shadow-lg hover:shadow-olive/10">
           <div class="mx-auto mb-3 grid h-12 w-12 place-items-center rounded-xl bg-forest/10 text-forest">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" class="h-6 w-6"><path d="M12 2 3 7v10l9 5 9-5V7l-9-5Z"/><path d="M3 7l9 5 9-5"/><path d="M12 12v10"/></svg>
           </div>
-          <div class="font-bold text-ink text-[0.98rem]">Gear 3×3</div>
-          <div class="text-xs text-stone mt-1">Geared cube</div>
+          <div class="font-display font-bold text-ink text-lg">Gear 3×3</div>
+          <div class="text-sm text-stone mt-1">Geared cube</div>
         </div>
         </div>
         <div class="flex items-center justify-between mt-5">
@@ -561,28 +568,29 @@
   <div class="h-px bg-gradient-to-r from-transparent via-olive/30 to-transparent"></div>
 </div>
 
+
 <section id="education" class="relative z-10 py-28">
   <div class="max-w-[1180px] mx-auto px-8">
     <div class="max-w-xl mb-14">
-      <h2 class="font-display italic font-semibold text-4xl md:text-5xl text-ink">Education</h2>
+      <h2 class="font-display font-bold text-4xl md:text-5xl text-ink">Education</h2>
     </div>
     <div class="relative pl-10">
       <div class="relative pb-12 timeline-dot timeline-connector">
-        <div class="font-display italic text-forest text-base mb-1.5">2025 – 2029</div>
-        <h3 class="text-xl font-extrabold text-ink">B.E. Computer Science &amp; Engineering</h3>
-        <div class="text-stone text-[0.94rem] mt-1.5">S.A. Engineering College</div>
+        <div class="font-display font-semibold text-forest text-lg mb-1.5">2025 – 2029</div>
+        <h3 class="font-display text-xl md:text-2xl font-bold text-ink">B.E. Computer Science &amp; Engineering</h3>
+        <div class="text-stone text-base md:text-lg mt-1.5">S.A. Engineering College</div>
         <span class="inline-block mt-2.5 text-sm font-bold text-olived bg-olive/10 border border-olive/25 px-3 py-1.5 rounded-full">CGPA 7.38</span>
       </div>
       <div class="relative pb-12 timeline-dot timeline-connector">
-        <div class="font-display italic text-forest text-base mb-1.5">2025</div>
-        <h3 class="text-xl font-extrabold text-ink">Class XII — CBSE</h3>
-        <div class="text-stone text-[0.94rem] mt-1.5">Kendriya Vidyalaya</div>
+        <div class="font-display font-semibold text-forest text-lg mb-1.5">2025</div>
+        <h3 class="font-display text-xl md:text-2xl font-bold text-ink">Class XII — CBSE</h3>
+        <div class="text-stone text-base md:text-lg mt-1.5">Kendriya Vidyalaya</div>
         <span class="inline-block mt-2.5 text-sm font-bold text-olived bg-olive/10 border border-olive/25 px-3 py-1.5 rounded-full">60.5%</span>
       </div>
       <div class="relative timeline-dot">
-        <div class="font-display italic text-forest text-base mb-1.5">2023</div>
-        <h3 class="text-xl font-extrabold text-ink">Class X — CBSE</h3>
-        <div class="text-stone text-[0.94rem] mt-1.5">Kendriya Vidyalaya</div>
+        <div class="font-display font-semibold text-forest text-lg mb-1.5">2023</div>
+        <h3 class="font-display text-xl md:text-2xl font-bold text-ink">Class X — CBSE</h3>
+        <div class="text-stone text-base md:text-lg mt-1.5">Kendriya Vidyalaya</div>
         <span class="inline-block mt-2.5 text-sm font-bold text-olived bg-olive/10 border border-olive/25 px-3 py-1.5 rounded-full">69%</span>
       </div>
     </div>
@@ -593,36 +601,35 @@
   <div class="h-px bg-gradient-to-r from-transparent via-olive/30 to-transparent"></div>
 </div>
 
-
 <section id="certifications" class="relative z-10 py-28">
   <div class="max-w-[1180px] mx-auto px-8">
     <div class="max-w-xl mb-14">
-      <h2 class="font-display italic font-semibold text-4xl md:text-5xl text-ink">Certifications &amp; Achievements</h2>
+      <h2 class="font-display font-bold text-4xl md:text-5xl text-ink">Certifications &amp; Achievements</h2>
     </div>
     <div class="grid md:grid-cols-2 gap-4">
       <div class="flex items-baseline gap-4 p-5 rounded-2xl border border-olive/25 bg-white/60">
-        <span class="text-forest font-display italic text-2xl">✓</span>
-        <p class="text-ink text-[0.96rem] font-semibold">NPTEL — Programming in Modern C++</p>
+        <span class="text-forest font-display text-2xl">✓</span>
+        <p class="text-ink text-base md:text-lg font-semibold">NPTEL — Programming in Modern C++</p>
       </div>
       <div class="flex items-baseline gap-4 p-5 rounded-2xl border border-olive/25 bg-white/60">
-        <span class="text-forest font-display italic text-2xl">✓</span>
-        <p class="text-ink text-[0.96rem] font-semibold">MATLAB Onramp Certificate</p>
+        <span class="text-forest font-display text-2xl">✓</span>
+        <p class="text-ink text-base md:text-lg font-semibold">MATLAB Onramp Certificate</p>
       </div>
       <div class="flex items-baseline gap-4 p-5 rounded-2xl border border-olive/25 bg-white/60">
-        <span class="text-forest font-display italic text-2xl">✓</span>
-        <p class="text-ink text-[0.96rem] font-semibold">HackerRank SQL Certificates</p>
+        <span class="text-forest font-display text-2xl">✓</span>
+        <p class="text-ink text-base md:text-lg font-semibold">HackerRank SQL Certificates</p>
       </div>
       <div class="flex items-baseline gap-4 p-5 rounded-2xl border border-olive/25 bg-white/60">
-        <span class="text-forest font-display italic text-2xl">✓</span>
-        <p class="text-ink text-[0.96rem] font-semibold">Google Flutter Badges</p>
+        <span class="text-forest font-display text-2xl">✓</span>
+        <p class="text-ink text-base md:text-lg font-semibold">Google Flutter Badges</p>
       </div>
       <div class="flex items-baseline gap-4 p-5 rounded-2xl border border-olive/25 bg-white/60">
-        <span class="text-forest font-display italic text-2xl">✓</span>
-        <p class="text-ink text-[0.96rem] font-semibold">2nd Prize — Logo Making, S.A. Engineering College</p>
+        <span class="text-forest font-display text-2xl">✓</span>
+        <p class="text-ink text-base md:text-lg font-semibold">2nd Prize — Logo Making, S.A. Engineering College</p>
       </div>
       <div class="flex items-baseline gap-4 p-5 rounded-2xl border border-olive/25 bg-white/60">
-        <span class="text-forest font-display italic text-2xl">✓</span>
-        <p class="text-ink text-[0.96rem] font-semibold">Medal &amp; Cup — State-level Cube Competition</p>
+        <span class="text-forest font-display text-2xl">✓</span>
+        <p class="text-ink text-base md:text-lg font-semibold">Medal &amp; Cup — State-level Cube Competition</p>
       </div>
     </div>
   </div>
@@ -632,8 +639,8 @@
 <section id="contact" class="relative z-10 py-28">
   <div class="max-w-[1180px] mx-auto px-8">
     <div class="rounded-[2rem] border border-olive/25 bg-white/60 px-8 py-16 text-center">
-      <h2 class="font-display italic font-semibold text-4xl md:text-6xl text-ink">Let's talk</h2>
-      <p class="text-stone mt-5 mb-10 max-w-[46ch] mx-auto">Open to internships, collaborations, and interesting problems in security, AI, or design.</p>
+      <h2 class="font-display font-bold text-4xl md:text-6xl text-ink">Let's talk</h2>
+      <p class="text-stone text-base md:text-lg mt-5 mb-10 max-w-[46ch] mx-auto">Open to internships, collaborations, and interesting problems in security, AI, or design.</p>
       <div class="flex justify-center gap-3.5 flex-wrap">
         <a href="mailto:janmesh@example.com" class="inline-flex items-center gap-2 px-7 py-3.5 rounded-full font-bold text-sm text-cream bg-forest shadow-[0_10px_28px_rgba(47,107,79,0.28)] transition-all hover:-translate-y-0.5 hover:bg-olived">Email Me</a>
         <a href="https://github.com/gsjanmesh" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-7 py-3.5 rounded-full font-bold text-sm text-ink border border-olive/30 bg-white/70 transition-colors hover:bg-forest/10 hover:border-forest/40">GitHub</a>
